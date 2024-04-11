@@ -1,0 +1,312 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Oshank Kumar'
+theme = 'hugo-profile'
+
+Paginate = 3
+enableRobotsTXT = true
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[Menus.main]]
+identifier = "blog"
+name = "Blog"
+title = "Blog posts"
+url = "/blogs"
+weight = 1
+
+[[Menus.main]]
+identifier = "gallery"
+name = "Gallery"
+title = "Blog posts"
+url = "/gallery"
+weight = 2
+
+[params]
+title = "Oshank Profile"
+description = "My Personal Website"
+favicon = "/fav.png"
+useBootstrapCDN = false
+mathjax = false
+animate = true
+
+  [params.color]
+#   textColor= "#F5F5F5"
+#   secondaryTextColor= "#F5F5F5"
+#   backgroundColor= "#313552"
+#   primaryColor= "#F1E0AC"
+#   secondaryColor= "#30475E"
+
+  [params.font]
+  fontSize = "1rem"
+  fontWeight = 400
+  lineHeight = 1.5
+  textAlign = "left"
+
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "My Profile"
+  disableSearch = true
+
+    [params.navbar.stickyNavBar]
+    enable = true
+    showOnScrollUp = true
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = false
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  intro = "Hi👋, I'm"
+  title = "Oshank."
+  subtitle = "A Golang specialist and Distributed systems enthusiast."
+  content = """
+  With 9 years of backend development experience, specializing in Golang and distributed systems. I focus on building robust, secure, and scalable microservices, adhering to SOLID principles. 
+  """
+  image = "/images/my_pic.jpeg"
+
+
+    [params.hero.bottomImage]
+    enable = true
+
+    [params.hero.button]
+    enable = true
+    name = "Resume"
+    url = "#"
+    download = true
+    newPage = false
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/oshankkumar/"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/oshankkumar/"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-x-twitter"
+url = "https://twitter.com/OSHANKMATHUR"
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "/images/my_pic.jpeg"
+  content = """
+Hi👋, I'm a passionate Software Engineer with 9 years of expertise in backend development, specializing in Golang(Go) and distributed systems. I thrive on building robust, secure, and scalable microservices, and I'm always eager to tackle complex problems.
+
+I love writing code that adheres to SOLID principles, ensuring readability and low maintenance. My expertise includes a wide range of technologies and tools.
+
+Currently, I'm working as a Senior Software Engineer at Walmart, where I'm part of the Walmart Edge foundation team, focused on optimizing Walmart's website on the Edge (CDN/T1 proxy)."""
+
+    [params.about.skills]
+    enable = true
+    title = "🌟 Specialities:"
+    items = [ "Golang(Go)", "Distributed Systems", "Kafka", "MySQL", "Azure CosmosDB", "Clickhouse", "Redis", "Prometheus", "Grafana", "Ansible", "Terraform", "Docker", "Kubernetes"]
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.items]]
+    job = "Senior Software Engineer-IN4"
+    company = "Walmart"
+    companyUrl = "https://tech.walmart.com/content/walmart-global-tech/en_us.html"
+    date = "Nov 2021 - present"
+    content = """
+I'm part of Walmart Edge foundation team and Currently working on T1 Proxy. 
+
+I am a key contributor to the development of an asynchronous asset optimization pipeline — A Distributed system designed to optimize static asset which helped in significantly improving webpage load times and overall end-user satisfaction.
+
+**Key Contributions:**
+- I led the scaling effort of our optimization pipeline, enabling it to efficiently handle over 500 million assets. This involved architectural enhancements and performance tuning to accommodate extreme concurrent throughput.
+- I contributed to the development of a robust Redis-based job queueing system, capable of handling more than 200,000 jobs per minute. This system ensures efficient asset processing and timely optimization.
+- Collaboratively, I played a crucial role in improving core web vitals, delivering a better user experience by optimizing loading times and critical web performance metrics.
+- I implemented regression tests for our optimization pipeline, utilizing the Ginkgo framework. This initiative resulted in a more reliable and faster release cycle.
+- To streamline our deployment processes, I automated them using Concord and Ansible, simplifying and expediting deployment tasks.
+"""
+
+      [params.experience.items.featuredLink]
+      enable = true
+      name = "Excellence Award"
+      url = "https://www.linkedin.com/in/oshankkumar/overlay/1635554117537/single-media-viewer/?type=DOCUMENT&profileId=ACoAABYciQwBIXva-qAy4GIGkkmxbkZOes0Um8Q"
+
+    [[params.experience.items]]
+    job = "SDE -3"
+    company = "GoJek"
+    companyUrl = "https://www.gojek.io/"
+    date = "Apr 2019 - Nov 2021"
+    content = """
+My experience at GoJek has been instrumental in honing my skills and contributing to the success of critical projects, including:
+
+**GoFood Merchant Order System:**
+- Designed and implemented multiple APIs to empower food merchants with real-time order details, enhancing their operational efficiency.
+- Led user requirement analysis, design, and programming efforts to improve merchant experience, like build MQTT message broker-based order updates for faster communication instead of using a polling system.
+- Spearheaded the design and development of a system architecture that prompts merchants to initiate food preparation when drivers are nearby, optimizing order fulfillment.
+- Architected a compensation system within the merchant app, allowing merchants to raise compensation requests for order cancellations not attributable to them.
+
+**GoFood Order Management System:**
+- Played a pivotal role in developing highly available background workers, supported by Redis Sentinel, ensuring reliable order fulfillment and delivery.
+- Automated infrastructure provisioning and configuration management for high-availability workers using Terraform and Chef, streamlining system maintenance.
+- Successfully integrated our system with multiple third-party services, improving interoperability and expanding our service offerings.
+- Contributed to the development of various business-specific features, enriching the GoFood ecosystem with enhanced functionality.
+
+These experiences have honed my skills in system architecture, API design, automation, and cross-functional collaboration, enabling me to make valuable contributions to complex projects
+"""
+
+      [params.experience.items.featuredLink]
+      enable = false
+      url = "https://example.com"
+
+      [params.experience.items.info]
+      enable = true
+      content = "I worked as a software developer for more than two year in gojek."
+
+    [[params.experience.items]]
+    job = "Software Engineer"
+    company = "RedHat"
+    companyUrl = "https://www.redhat.com/en"
+    date = "Jul 2018 - Apr 2019"
+    content = """
+**Key Contributions:**    
+- Contributed to the development of GlusterD2 – a re-implementation of GlusterD, aimed at achieving superior consistency, scalability, and performance in managing GlusterFS volumes.
+- Played a pivotal role in the development of the GlusterD2 transaction framework, a critical component used for executing and orchestrating distributed actions (transactions) across the Gluster trusted storage pool. This framework powers various volume management and cluster management operations within GlusterD2.
+"""
+
+    [[params.experience.items]]
+    job = "Software Engineer"
+    company = 'I AM Plus'
+    companyUrl = "https://www.linkedin.com/company/iam-/?originalSubdomain=in"
+    date = "Jan 2018 - Jul 2018"
+    content =  """
+**Key Contributions:** 
+- Wokred in development of Omega API Gateway, serving as a layer 7 entry point for API calls
+- Implemented routing logic to direct API requests to backend services
+- Integrated rate limiting with Redis for managing API request rates    
+"""
+
+    [[params.experience.items]]
+    job = "Project Engineer"
+    company = 'Wipro'
+    companyUrl = "https://www.wipro.com/"
+    date = "Oct 2015 - Dec 2017"
+    content =  """
+**Client:** Huawei
+
+**Project Name:** [go-chassis](https://github.com/go-chassis/go-chassis)
+
+Go-Chassis is a microservice framework for rapid development of microservices in Go. it focus on helping developer to deliver cloud native application more easily
+**Key Contributions:** 
+- Contributed to the development of go-chassis, a microservice framework for rapid development in Go.
+- Implemented instrumentation and observability features in go-chassis.
+- Developed end-to-end (e2e) testing using the ginkgo and gomega framework.
+- Created demo services in Golang to showcase the capabilities of go-chassis.
+"""
+
+  [params.education]
+  enable = true
+  index = false
+
+
+    [[params.education.items]]
+    title = "Bachelor of Technology in Electronics And Communication"
+    date = "2011 - 2015"
+    GPA = "9.0 out of 10"
+    content = ""
+
+      [params.education.items.school]
+      name = "West Bengal University of Technology"
+      url = "https://makautwb.ac.in/"
+
+      [params.education.items.featuredLink]
+      enable = true
+      name = "My academic record"
+      url = "https://www.linkedin.com/in/oshankkumar/overlay/1712771731748/single-media-viewer/?type=IMAGE&profileId=ACoAABYciQwBIXva-qAy4GIGkkmxbkZOes0Um8Q"
+
+  [params.achievements]
+  enable = true
+
+    [[params.achievements.items]]
+    title = "Walmart Engineering Excellence Award"
+    content = ""
+    url = "https://www.linkedin.com/in/oshankkumar/overlay/1635554117537/single-media-viewer/?type=DOCUMENT&profileId=ACoAABYciQwBIXva-qAy4GIGkkmxbkZOes0Um8Q"
+    image = "/images/IDC_Award_Excellence.png"
+
+
+  [params.projects]
+  enable = false
+
+    [[params.projects.items]]
+    title = "Hugo Profile"
+    content = "A highly customizable and mobile first Hugo template for personal portfolio and blog."
+    image = "/images/projects/profile.png"
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://hugo-profile.netlify.app"
+
+      [[params.projects.items.links]]
+      icon = "fa fa-envelope"
+      url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/hugo-profile"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-twitter"
+      url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+
+
+  [params.contact]
+  enable = true
+  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+  btnName = "Mail me"
+  btnLink = "mailto:oshankfriends@gmail.com"
+
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = true
+disableFeaturedImage = false
+
+[params.footer.socialNetworks]
+github = "https://github.com/oshankkumar/"
+linkedin = "https://www.linkedin.com/in/oshankkumar/"
+twitter = "https://twitter.com/OSHANKMATHUR"
+# instagram = "https://instagram.com"
+# facebook = "https://facebook.com"
+
+  [params.listPages]
+  disableFeaturedImage = false
+
+[params.singlePages.readTime]
+enable = true
+content = "min read"
+
+[params.singlePages.scrollprogress]
+enable = true
+
+  [params.terms]
+  read = "Read"
+  toc = "Table Of Contents"
+  copyright = "All rights reserved"
+  pageNotFound = "Page not found"
+  emailText = "Check out this site"
+
+  [params.datesFormat]
+  article = "Jan 2, 2006"
+  articleList = "Jan 2, 2006"
+  articleRecent = "Jan 2, 2006"
