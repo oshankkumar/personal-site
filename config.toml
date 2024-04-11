@@ -83,7 +83,7 @@ animate = true
     [params.hero.button]
     enable = true
     name = "Resume"
-    url = "#"
+    url = "/assets/Oshank_kumar_Resume.pdf"
     download = true
     newPage = false
 
