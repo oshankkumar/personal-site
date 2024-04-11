@@ -74,7 +74,7 @@ animate = true
   content = """
   With 9 years of backend development experience, specializing in Golang and distributed systems. I focus on building robust, secure, and scalable microservices, adhering to SOLID principles. 
   """
-  image = "/images/my_pic_3.jpeg"
+  image = "/images/hero_img.jpeg"
 
 
     [params.hero.bottomImage]
@@ -137,7 +137,7 @@ I am a key contributor to the development of an asynchronous asset optimization 
 """
 
       [params.experience.items.featuredLink]
-      enable = true
+      enable = false
       name = "Excellence Award"
       url = "https://www.linkedin.com/in/oshankkumar/overlay/1635554117537/single-media-viewer/?type=DOCUMENT&profileId=ACoAABYciQwBIXva-qAy4GIGkkmxbkZOes0Um8Q"
 
