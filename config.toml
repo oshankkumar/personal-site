@@ -74,7 +74,7 @@ animate = true
   content = """
   With 9 years of backend development experience, specializing in Golang and distributed systems. I focus on building robust, secure, and scalable microservices, adhering to SOLID principles. 
   """
-  image = "/images/my_pic.jpeg"
+  image = "/images/my_pic_3.jpeg"
 
 
     [params.hero.bottomImage]
@@ -231,7 +231,7 @@ Go-Chassis is a microservice framework for rapid development of microservices in
       [params.education.items.featuredLink]
       enable = true
       name = "My academic record"
-      url = "https://www.linkedin.com/in/oshankkumar/overlay/1712771731748/single-media-viewer/?type=IMAGE&profileId=ACoAABYciQwBIXva-qAy4GIGkkmxbkZOes0Um8Q"
+      url = "/images/degree_certificate.jpg"
 
   [params.achievements]
   enable = true
@@ -241,6 +241,18 @@ Go-Chassis is a microservice framework for rapid development of microservices in
     content = ""
     url = "https://www.linkedin.com/in/oshankkumar/overlay/1635554117537/single-media-viewer/?type=DOCUMENT&profileId=ACoAABYciQwBIXva-qAy4GIGkkmxbkZOes0Um8Q"
     image = "/images/IDC_Award_Excellence.png"
+
+    [[params.achievements.items]]
+    title = "Walmart Bravo Award"
+    content = ""
+    url = ""
+    image = "/images/bravo_walmart.jpg"
+
+    [[params.achievements.items]]
+    title = "RedHat Multiplier Collaborate"
+    content = ""
+    url = ""
+    image = "/images/redhat_multiplier.jpg"
 
 
   [params.projects]
