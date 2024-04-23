@@ -31,17 +31,17 @@ weight = 2
 [params]
 title = "Oshank Profile"
 description = "My Personal Website"
-favicon = "/fav.png"
+favicon = "/images/logo.png"
 useBootstrapCDN = false
 mathjax = false
 animate = true
 
   [params.color]
-#   textColor= "#F5F5F5"
-#   secondaryTextColor= "#F5F5F5"
-#   backgroundColor= "#313552"
-#   primaryColor= "#F1E0AC"
-#   secondaryColor= "#30475E"
+  textColor= "#000000"
+  secondaryTextColor= "#6495ED"
+  backgroundColor= "#F0F8FF"
+  # primaryColor= "#483D8B"
+  # secondaryColor= "#30475E"
 
   [params.font]
   fontSize = "1rem"
@@ -84,8 +84,8 @@ animate = true
     enable = true
     name = "Resume"
     url = "/assets/Oshank_kumar_Resume.pdf"
-    download = true
-    newPage = false
+    download = false
+    newPage = true
 
 [[params.hero.socialLinks.fontAwesomeIcons]]
 icon = "fab fa-github"
