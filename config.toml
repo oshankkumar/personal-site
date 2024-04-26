@@ -38,10 +38,10 @@ animate = true
 
   [params.color]
   textColor= "#000000"
-  secondaryTextColor= "#6495ED"
+  secondaryTextColor= "#483D8B"
   backgroundColor= "#F0F8FF"
-  # primaryColor= "#483D8B"
-  # secondaryColor= "#30475E"
+  primaryColor= "#483D8B"
+  secondaryColor= "#FFFFFF"
 
   [params.font]
   fontSize = "1rem"
@@ -52,7 +52,7 @@ animate = true
   [params.navbar]
   align = "ms-auto"
   brandName = "Oshank Kumar"
-  disableSearch = true
+  disableSearch = false
 
     [params.navbar.stickyNavBar]
     enable = true
