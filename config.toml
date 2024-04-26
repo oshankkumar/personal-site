@@ -1,6 +1,6 @@
 baseURL = 'https://oshankkumar.in/'
 languageCode = 'en-us'
-title = 'Oshank Kumar'
+title = 'Oshank Kumar - Golang Specialist and Distributed Systems Enthusiast'
 theme = 'hugo-profile'
 
 Paginate = 3
