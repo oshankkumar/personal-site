@@ -1,6 +1,6 @@
 baseURL = 'https://oshankkumar.in/'
 languageCode = 'en-us'
-title = 'Oshank Kumar - Golang Specialist and Distributed Systems Enthusiast'
+title = 'Oshank Kumar - Golang and Distributed Systems Enthusiast'
 theme = 'hugo-profile'
 
 Paginate = 3
@@ -29,8 +29,11 @@ url = "/gallery"
 weight = 2
 
 [params]
-title = "Oshank Kumar - Golang Specialist and Distributed Systems Enthusiast"
-description = "Discover the world of Oshank Kumar, a skilled Software Engineer specializing in Golang and distributed systems"
+title = "Oshank Kumar - Golang and Distributed Systems Enthusiast"
+description = """
+Explore the world of Oshank Kumar, A skilled Software Engineer specializing in Golang and distributed systems. 
+Explore insightful blogs, projects showcasing building robust, secure, and scalable backend systems.
+"""
 favicon = "/images/logo.png"
 useBootstrapCDN = false
 mathjax = false
