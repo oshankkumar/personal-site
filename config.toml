@@ -34,7 +34,7 @@ description = """
 Explore the world of Oshank Kumar, A skilled Software Engineer specializing in Golang and distributed systems. 
 Explore insightful blogs, projects showcasing building robust, secure, and scalable backend systems.
 """
-favicon = "/images/logo.png"
+favicon = "/images/logo.svg"
 useBootstrapCDN = false
 mathjax = false
 animate = true
