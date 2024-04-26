@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://oshankkumar.in/'
 languageCode = 'en-us'
 title = 'Oshank Kumar'
 theme = 'hugo-profile'
@@ -17,7 +17,7 @@ unsafe = true
 [[Menus.main]]
 identifier = "blog"
 name = "Blog"
-title = "Blog posts"
+title = "Read the latest blog posts by Oshank Kumar on topics related to Golang, distributed systems, and backend development."
 url = "/blogs"
 weight = 1
 
@@ -29,8 +29,8 @@ url = "/gallery"
 weight = 2
 
 [params]
-title = "Oshank Profile"
-description = "My Personal Website"
+title = "Oshank Kumar - Golang Specialist and Distributed Systems Enthusiast"
+description = "Discover the world of Oshank Kumar, a skilled Software Engineer specializing in Golang and distributed systems"
 favicon = "/images/logo.png"
 useBootstrapCDN = false
 mathjax = false
@@ -51,7 +51,7 @@ animate = true
 
   [params.navbar]
   align = "ms-auto"
-  brandName = "My Profile"
+  brandName = "Oshank Kumar"
   disableSearch = true
 
     [params.navbar.stickyNavBar]
