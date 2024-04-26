@@ -74,7 +74,7 @@ animate = true
   content = """
   With 9 years of backend development experience, specializing in Golang and distributed systems. I focus on building robust, secure, and scalable microservices, adhering to SOLID principles. 
   """
-  image = "/images/hero_img.jpeg"
+  image = "/images/hero_img.webp"
 
 
     [params.hero.bottomImage]
